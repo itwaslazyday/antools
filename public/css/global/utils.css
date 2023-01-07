@@ -1,0 +1,24 @@
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  clip: rect(0 0 0 0);
+}
+
+.container {
+  margin: 0 auto;
+  padding: 0 28px;
+  min-width: var(--mobile-width);
+  max-width: var(--desktop-width);
+}
+
+.custom-button {
+  font-weight: 600;
+  text-align: center;
+  background-color: var(--color-orange);
+  border-radius: 8px;
+  color: rgba(255, 255, 255, 0.9);
+  cursor: pointer;
+  border: none;
+}

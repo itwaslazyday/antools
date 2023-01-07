@@ -1,0 +1,43 @@
+.promo {
+  padding: 78px 0 0;
+  background-image: url(../../../public/img/promo-background.webp);
+  background-repeat: no-repeat;
+  background-position-x: -37px;
+  background-position-y: 90%;
+}
+
+.promo__wrapper {
+  max-width: 600px;
+}
+
+.promo__title {
+  font-size: 50px;
+  line-height: 140%;
+  font-weight: 500;
+  color: rgba(255, 255, 255, 0.9);
+  letter-spacing: 0.08125rem;
+  margin: 0;
+  margin-bottom: 30px;
+}
+
+.promo__title span {
+  color: var(--color-orange);
+}
+
+.promo__info {
+  font-size: 18px;
+  letter-spacing: 0.02125rem;
+  margin-bottom: 60px;
+  max-width: 80%;
+}
+
+.promo__form {
+  margin-bottom: 110px;
+  max-width: 500px;
+}
+
+.socials {
+  display: flex;
+  justify-content: flex-start;
+  gap: 8px;
+}

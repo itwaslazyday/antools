@@ -1,0 +1,55 @@
+.form__wrapper-gradient {
+  border-radius: 15px;
+  padding: 1.5px;
+  background-image: linear-gradient(40deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+}
+
+.form__wrapper {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  position: relative;
+  border-radius: inherit;
+  background-color: #283036;
+  padding: 8px 11px 8px 25px;
+}
+
+.form__wrapper--pseudo {
+  padding-left: 55px;
+}
+
+.form__wrapper--pseudo::before {
+  content: "";
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  left: 18px;
+  background-image: url('../../../public/img/search.svg');
+  background-repeat: no-repeat;
+}
+
+.form__wrapper input {
+  border: none;
+  outline: none;
+  flex: 1;
+  font-weight: 400;
+  font-size: inherit;
+  line-height: inherit;
+  color: white;
+  background-color: transparent;
+}
+
+.form__wrapper input::placeholder {
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 400px;
+  color: rgba(255, 255, 255, 0.38);
+  letter-spacing: 0.01875pxrem;
+}
+
+.form__submit {
+  padding: 12px 36px;
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--color-white);
+}
