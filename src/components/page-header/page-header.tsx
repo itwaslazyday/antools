@@ -1,5 +1,5 @@
 import { NavLink } from 'react-router-dom';
-import { navigationItems } from '../../const';
+import { headerLinks } from '../../const';
 import { Logo } from '../logo/logo';
 import './page-header.css';
 
@@ -11,7 +11,7 @@ function PageHeader(): JSX.Element {
           <Logo block='header'/>
           <nav className='header__navigation navigation'>
             <ul className='navigation__list'>
-              {navigationItems.map((item) => (
+              {headerLinks.map((item) => (
                 <li className='navigation__list-item' key={item}>
                   <NavLink
                     className={`navigation__link ${item === 'Categories' ? 'navigation__link--options' : ''}`}

@@ -1,0 +1,93 @@
+.tool {
+  position: relative;
+  max-width: 392px;
+  padding: 33px;
+  border-radius: 15px;
+  transition: all 0.3s linear;
+  z-index: 1;
+}
+
+.tool::after {
+  display: none;
+  content: '';
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  right: -2px;
+  bottom: -2px;
+  border-radius: inherit;
+  /* background-image: linear-gradient(180deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0)); */
+  z-index: -1;
+}
+
+.tool:hover {
+  transform: translate(0, -25px);
+  background: url('../../../public/img/card-background.png') center no-repeat;
+}
+
+.tool:hover .tool__link {
+  background-color: var(--color-orange);
+  color: var(--color-white);
+}
+
+.tool:hover::after {
+  display: block;
+}
+
+.tool__wrapper {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.tool__icon {
+  margin-right: 30px;
+}
+
+.tool__title {
+  margin: 0;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 36px;
+  color: rgba(255, 255, 255, 0.78);
+}
+
+.tool__license {
+  display: block;
+  font-size: 18px;
+  color: rgba(255, 165, 55, 0.55);
+}
+
+.tool__description {
+  margin: 30px 0;
+}
+
+.tool__button {
+  cursor: pointer;
+}
+
+.tool__button--favourite {
+  margin-right: 12px;
+}
+
+.tool__button--favourite:hover svg > path {
+  fill: #FD3B41;
+  fill-opacity: 1;
+}
+
+.tool__button--personal:hover svg > path {
+  fill: rgba(255, 255, 255, 0.78);
+  fill-opacity: 1;
+}
+
+.tool__link {
+  background-color: transparent;
+  color: inherit;
+  border-radius: 8px;
+  margin-left: auto;
+  padding: 9px 35px;
+  font-weight: 600;
+  line-height: 24px;
+  transition: background-color 0.2s linear;
+}
+

@@ -1,9 +1,12 @@
 .promo {
-  padding: 78px 0 0;
   background-image: url(../../../public/img/promo-background.webp);
   background-repeat: no-repeat;
-  background-position-x: -37px;
   background-position-y: 90%;
+  margin-bottom: 100px;
+}
+
+.promo__inner {
+  padding: 78px 0 0;
 }
 
 .promo__wrapper {

@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import { footerItems } from '../../const';
+import { footerLinks } from '../../const';
 import { Logo } from '../logo/logo';
 import './page-footer.css';
 
@@ -30,7 +30,7 @@ function PageFooter(): JSX.Element {
           <div className='footer__item'>
             <h2 className='footer__title'>Categories</h2>
             <ul className='footer__list'>
-              {footerItems.slice(0, 2).map((item) => (
+              {footerLinks.slice(0, 2).map((item) => (
                 <li className='footer__list-item' key={item}>
                   <Link className='footer__link' to='#'>
                     {item}
@@ -42,7 +42,7 @@ function PageFooter(): JSX.Element {
           <div className='footer__item'>
             <h2 className='footer__title'>Company Info</h2>
             <ul className='footer__list'>
-              {footerItems.slice(2).map((item) => (
+              {footerLinks.slice(2).map((item) => (
                 <li className='footer__list-item' key={item}>
                   <Link className='footer__link' to='#'>
                     {item}
