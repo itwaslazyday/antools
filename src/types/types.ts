@@ -6,7 +6,12 @@ type PopularTool ={
   isAdded: boolean;
   url: string;
   icon?: string;
-}
+};
+
+type Partner = {
+  name: string;
+  url: string;
+};
 
 
-export type {PopularTool};
+export type {PopularTool, Partner};

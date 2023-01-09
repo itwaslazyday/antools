@@ -11,8 +11,12 @@
   display: flex;
   list-style-type: none;
   font-weight: 500;
-  gap: 44px;
+  gap: 24px;
   color: rgba(255, 255, 255, 0.55)
+}
+
+.navigation__link {
+  padding: 10px;
 }
 
 .navigation__link--options {

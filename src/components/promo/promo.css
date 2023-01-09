@@ -44,3 +44,14 @@
   justify-content: flex-start;
   gap: 8px;
 }
+
+.socials__link svg {
+  width: 58px;
+  fill: var(--color-white);
+  fill-opacity: 0.78;
+  transition: all 0.3s linear;
+}
+
+.socials__link:hover svg {
+  transform: scale(130%);
+}

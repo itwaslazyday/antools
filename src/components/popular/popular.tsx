@@ -11,7 +11,7 @@ function Popular():JSX.Element {
           <p className='popular__text'>Tools for the best Designers and Developers most popularly used in the world</p>
           <div className='popular__tools'>
             {popularToolsList.map((card) =>
-              <ToolCard card={card} key={card.title}/>
+              <ToolCard card={card} key={card.title} block='popular'/>
             )}
           </div>
           <button className='popular__more-btn button-reset'>Load more</button>

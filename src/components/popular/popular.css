@@ -28,6 +28,11 @@
   margin-bottom: 100px;
 }
 
+.popular__tool {
+  padding: 33px;
+  max-width: 392px;
+}
+
 .popular__more-btn {
   display: block;
   margin: 0 auto;
@@ -38,4 +43,10 @@
   border: 1px solid rgba(255, 255, 255, 0.1);
   border-radius: 8px;
   cursor: pointer;
+  transition: all 0.3s linear;
+}
+
+.popular__more-btn:hover {
+  background-color: rgba(255, 130, 48, 1);
+  color: rgba(255, 255, 255, 0.9);
 }

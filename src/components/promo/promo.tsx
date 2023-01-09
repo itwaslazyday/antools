@@ -27,8 +27,10 @@ function Promo(): JSX.Element {
             <ul className='promo__socials socials'>
               {socials.map((item) => (
                 <li className='socials__item' key={item}>
-                  <a className='socials__link' href='#' target='_blank' rel='noopener noreferrer'>
-                    <img src={`img/${item}.svg`} alt={item[0].toUpperCase() + item.slice(1)}/>
+                  <a className='socials__link' href='#' target='_blank' rel='noopener noreferrer' aria-label={`Our ${item}`}>
+                    <svg>
+                      <use xlinkHref={`img/sprite/sprite.svg#${item.toLowerCase()}`}></use>
+                    </svg>
                   </a>
                 </li>)
               )}

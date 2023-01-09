@@ -13,6 +13,13 @@
   max-width: var(--desktop-width);
 }
 
+.button-reset {
+  margin: 0;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+}
+
 .custom-button {
   font-weight: 600;
   text-align: center;
@@ -23,9 +30,14 @@
   border: none;
 }
 
-.button-reset {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  background-color: transparent;
+.custom-button:hover {
+  background-color: rgba(255, 130, 48, 1);
+}
+
+.custom-button:active {
+  opacity: 0.8;
+}
+
+.page-link:hover {
+  color: rgba(255, 255, 255, 0.9);
 }

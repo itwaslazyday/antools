@@ -1,4 +1,6 @@
 import Feedbacks from '../../components/feedbacks/feedbacks';
+import Newcomer from '../../components/newcomer/newcomer';
+import Partners from '../../components/partners/partners';
 import Popular from '../../components/popular/popular';
 import Promo from '../../components/promo/promo';
 import Contributor from '../../contributor/contributor';
@@ -9,6 +11,8 @@ function MainPage(): JSX.Element {
     <main className='page-main'>
       <Promo/>
       <Popular/>
+      <Partners/>
+      <Newcomer/>
       <Feedbacks/>
       <Contributor/>
     </main>

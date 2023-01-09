@@ -4,16 +4,17 @@ import { useState } from 'react';
 
 type ToolCardProps = {
   card: PopularTool;
+  block: string;
 };
 
-function ToolCard({card}: ToolCardProps): JSX.Element {
+function ToolCard({card, block}: ToolCardProps): JSX.Element {
   const [favourite, setFavourite] = useState<boolean>(card.isFavourite);
   const [personal, setPersonal] = useState<boolean>(card.isAdded);
 
   return(
-    <div className='popular__tool tool'>
+    <div className={`${block}__tool tool`}>
       <div className='tool__wrapper'>
-        <img className='tool__icon' src={`img/${card.icon ? card.icon : card.title.toLowerCase()}.svg`}/>
+        <img className='tool__icon' src={`img/tools/${card.icon ? card.icon : card.title.toLowerCase()}.svg`}/>
         <div>
           <h3 className='tool__title'>{card.title}</h3>
           <span className='tool__license'>{card.license}</span>

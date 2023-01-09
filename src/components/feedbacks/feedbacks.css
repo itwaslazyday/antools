@@ -1,7 +1,7 @@
 .feedbacks__inner {
   margin: 0 auto;
   text-align: center;
-  padding: 125px 0;
+  padding: 100px 0;
 }
 .feedback__quote {
   margin: 0;
@@ -15,6 +15,10 @@
 .feedback__person {
   align-self: stretch;
   position: relative;
+}
+
+.feedback__person img {
+  object-fit: contain;
 }
 
 .feedback__person div {

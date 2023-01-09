@@ -14,7 +14,7 @@ function PageHeader(): JSX.Element {
               {headerLinks.map((item) => (
                 <li className='navigation__list-item' key={item}>
                   <NavLink
-                    className={`navigation__link ${item === 'Categories' ? 'navigation__link--options' : ''}`}
+                    className={`navigation__link page-link ${item === 'Categories' ? 'navigation__link--options' : ''}`}
                     to='#'
                   >
                     {item}
@@ -24,7 +24,7 @@ function PageHeader(): JSX.Element {
             </ul>
           </nav>
           <div className='header__buttons'>
-            <button className='header__login' type='button'>Login</button>
+            <button className='header__login page-link' type='button'>Login</button>
             <button className='header__signup custom-button' type='button'>Sign Up</button>
           </div>
         </div>

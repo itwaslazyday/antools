@@ -12,6 +12,7 @@ function Feedbacks (): JSX.Element {
     <section className='feedbacks'>
       <div className='container'>
         <div className='feedbacks__inner'>
+          <h2 className='visually-hidden'>Feedbacks of our clients</h2>
           <Swiper
             modules={[Navigation, Pagination]}
             navigation
@@ -36,8 +37,8 @@ function Feedbacks (): JSX.Element {
                 <figure className='feedback__quote'>
                   <figcaption className='feedback__person'>
                     <picture>
-                      <source srcSet={`img/${item.image}.webp`} type="image/webp"/>
-                      <img src={`img/${item.image}.png`} alt={item.person + item.job} width='399' height='492'/>
+                      <source srcSet={`img/persons/${item.image}.webp`} type="image/webp"/>
+                      <img src={`img/persons/${item.image}.png`} alt={`${item.person}, ${item.job}`} width='399' height='492'/>
                     </picture>
                     <div>
                       <span>{item.person}</span>

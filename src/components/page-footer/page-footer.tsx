@@ -19,11 +19,11 @@ function PageFooter(): JSX.Element {
             <h2 className='footer__title'>Contact Us</h2>
             <ul className='footer__list'>
               <li className='footer__list-item'>
-                <a className='footer__link' href='tel:+621987463'>+621987463</a>
+                <a className='footer__link page-link' href='tel:+621987463'>+621987463</a>
               </li>
               <li className='footer__list-item'>M Building, No.10 A</li>
               <li className='footer__list-item'>
-                <a className='footer__link' href='mailto:antools@awesome.com'>antools@awesome.com</a>
+                <a className='footer__link page-link' href='mailto:antools@awesome.com'>antools@awesome.com</a>
               </li>
             </ul>
           </address>
@@ -32,7 +32,7 @@ function PageFooter(): JSX.Element {
             <ul className='footer__list'>
               {footerLinks.slice(0, 2).map((item) => (
                 <li className='footer__list-item' key={item}>
-                  <Link className='footer__link' to='#'>
+                  <Link className='footer__link page-link' to='#'>
                     {item}
                   </Link>
                 </li>)
@@ -44,7 +44,7 @@ function PageFooter(): JSX.Element {
             <ul className='footer__list'>
               {footerLinks.slice(2).map((item) => (
                 <li className='footer__list-item' key={item}>
-                  <Link className='footer__link' to='#'>
+                  <Link className='footer__link page-link' to='#'>
                     {item}
                   </Link>
                 </li>)
