@@ -22,6 +22,7 @@
 .partners__list {
   display: flex;
   max-height: 51px;
+  /* flex-wrap: wrap; */
   justify-content: space-between;
   align-items: center;
   gap: 107px;

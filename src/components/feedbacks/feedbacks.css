@@ -13,16 +13,17 @@
 }
 
 .feedback__person {
+  padding: 23px 0 0 10px;
   align-self: stretch;
   position: relative;
 }
 
 .feedback__person img {
-  object-fit: contain;
+  object-fit: cover;
 }
 
 .feedback__person div {
-  padding: 10px 22px 16px;
+  padding: 10px 22px 18px;
   max-width: 265px;
   background: rgba(40, 48, 54, 0.2);
   backdrop-filter: blur(25px);
@@ -56,10 +57,12 @@
   position: relative;
   text-align: left;
   margin: 0;
-  max-width: 380px;
+  max-width: 394px;
   font-size: 14px;
+  letter-spacing: 0.013em;
   color: rgba(255, 255, 255, 0.78);
   z-index: 2;
+  padding-bottom: 36px;
 }
 
 .feedback__text::before {
@@ -75,7 +78,11 @@
 }
 
 .swiper-wrapper {
-  margin-bottom: 100px;
+  margin-bottom: 97px;
+}
+
+.feedbacks__pagination-wrapper {
+  line-height: 8px;
 }
 
 .swiper-button-prev,
@@ -87,10 +94,11 @@
   color: rgba(255, 255, 255, 0.28);
 }
 
-.custom-bullet {
+.feedbacks__pagination-wrapper .custom-bullet.swiper-pagination-bullet {
   line-height: 8px;
   height: 8px;
   width: 44px;
   border-radius: 4px;
   background-color: var(--color-orange);
+  margin: 0 8px;
 }

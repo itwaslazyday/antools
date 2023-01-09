@@ -6,12 +6,17 @@
   line-height: 24px;
 }
 
+.header__navigation {
+  padding-left: 66px;
+}
+
 .navigation__list {
   position: relative;
   display: flex;
+  flex-wrap: wrap;
   list-style-type: none;
   font-weight: 500;
-  gap: 24px;
+  gap: 20px;
   color: rgba(255, 255, 255, 0.55)
 }
 
@@ -31,7 +36,7 @@
   position: absolute;
   top: 50%;
   right: 0;
-  transform: translate(100%, -40%);
+  transform: translate(70%, -40%);
   background-image: url("../../../public/img/chevron-down.svg");
   background-repeat: no-repeat;
 }
@@ -39,7 +44,7 @@
 .header__buttons {
   display: flex;
   font-weight: 600;
-  gap: 40px;
+  gap: 36px;
 }
 
 .header__login {
@@ -47,6 +52,8 @@
   border: none;
   color: rgba(255, 255, 255, 0.78);
   cursor: pointer;
+  line-height: 24px;
+  font-weight: 600;
 }
 
 .header__signup {

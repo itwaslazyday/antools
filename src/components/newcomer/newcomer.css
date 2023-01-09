@@ -1,5 +1,5 @@
 .newcomer__inner {
-  padding: 100px 0;
+  padding: 120px 0 80px;
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
@@ -33,6 +33,7 @@
 .newcomer__tool {
   padding: 28px 22px;
   max-width: 288px;
+  font-size: 14px;
 }
 
 .newcomer__more-btn {

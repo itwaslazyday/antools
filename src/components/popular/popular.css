@@ -17,7 +17,7 @@
   margin: 25px auto;
   font-weight: 500;
   font-size: 18px;
-  margin-bottom: 90px;
+  margin-bottom: 109px;
 }
 
 .popular__tools {
@@ -39,7 +39,7 @@
   font-weight: 500;
   font-size: 20px;
   color: var(--color-orange);
-  padding: 17px 38px;
+  padding: 20px 38px;
   border: 1px solid rgba(255, 255, 255, 0.1);
   border-radius: 8px;
   cursor: pointer;
