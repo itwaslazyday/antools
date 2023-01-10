@@ -11,7 +11,12 @@ function Partners():JSX.Element {
           <ul className='partners__list'>
             {partnerList.map((item) => (
               <li className='partners__list-item' key={item.name}>
-                <a className='partners__item-link' href={item.url} target='_blank' rel='noopener noreferrer' aria-label={item.name}>
+                <a
+                  className={`partners__item-link partners__item-link--${item.name.toLowerCase()}`}
+                  href={item.url} target='_blank'
+                  rel='noopener noreferrer'
+                  aria-label={item.name}
+                >
                   <svg>
                     <use xlinkHref={`img/sprite/sprite.svg#${item.name.toLowerCase()}`}></use>
                   </svg>
