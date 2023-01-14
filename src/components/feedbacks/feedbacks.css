@@ -88,6 +88,20 @@
 .swiper-button-prev,
 .swiper-button-next {
   color: var(--color-orange);
+  top: 43%;
+}
+
+.swiper-button-prev {
+  left: 2%;
+}
+
+.swiper-button-next {
+  right: 2%;
+}
+
+.swiper-button-next::after,
+.swiper-button-prev::after {
+  font-size: 27px;
 }
 
 .swiper-button-disabled {
